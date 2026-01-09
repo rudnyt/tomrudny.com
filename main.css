@@ -1,0 +1,159 @@
+/* ========================
+   Base Colors
+======================== */
+:root {
+  --navy: #0b1e3d;
+  --dark-blue: #142850;
+  --mid-blue: #274690;
+  --accent: #0096c7;
+  --light-bg: #f5f7fa;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --border-light: #e2e8f0;
+}
+
+/* ========================
+   Global Reset & Body
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+/* ========================
+   Typography
+======================== */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 1em;
+  color: var(--dark-blue);
+}
+
+/* ========================
+   Links
+======================== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--mid-blue);
+}
+
+/* ========================
+   Layout
+======================== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  background-color: var(--navy);
+  color: var(--text-primary);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+/* ========================
+   Buttons
+======================== */
+button, .btn {
+  background-color: var(--accent);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--mid-blue);
+}
+
+/* ========================
+   Sections
+======================== */
+section {
+  padding: 4rem 0;
+}
+
+section:nth-child(even) {
+  background-color: var(--light-bg);
+}
+
+section:nth-child(odd) {
+  background-color: var(--text-primary);
+  color: var(--navy);
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+/* ========================
+   Cards
+======================== */
+.card {
+  background-color: var(--text-primary);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ========================
+   Footer
+======================== */
+footer {
+  background-color: var(--navy);
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+
+/* ========================
+   Responsive
+======================== */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+}

@@ -9,3 +9,250 @@
   <p>AI & ML engineer.</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom Rudny – AI & ML Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ========================
+       Base Colors
+    ======================== */
+    :root {
+      --navy: #0b1e3d;
+      --dark-blue: #142850;
+      --mid-blue: #274690;
+      --accent: #0096c7;
+      --light-bg: #f5f7fa;
+      --text-primary: #ffffff;
+      --text-secondary: #d1d5db;
+      --border-light: #e2e8f0;
+    }
+
+    /* ========================
+       Global Reset & Body
+    ======================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    /* ========================
+       Typography
+    ======================== */
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.5em;
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+
+    p {
+      margin-bottom: 1em;
+      color: var(--dark-blue);
+    }
+
+    ul {
+      margin-bottom: 1em;
+      padding-left: 1.5em;
+      list-style-type: disc;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: var(--mid-blue);
+    }
+
+    /* ========================
+       Layout
+    ======================== */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      background-color: var(--navy);
+      color: var(--text-primary);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    /* ========================
+       Buttons
+    ======================== */
+    button, .btn {
+      background-color: var(--accent);
+      color: var(--text-primary);
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button:hover, .btn:hover {
+      background-color: var(--mid-blue);
+    }
+
+    /* ========================
+       Sections
+    ======================== */
+    section {
+      padding: 4rem 0;
+    }
+
+    section:nth-child(even) {
+      background-color: var(--light-bg);
+    }
+
+    section:nth-child(odd) {
+      background-color: var(--text-primary);
+      color: var(--navy);
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      max-width: 800px;
+    }
+
+    /* ========================
+       Cards
+    ======================== */
+    .card {
+      background-color: var(--text-primary);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ========================
+       Footer
+    ======================== */
+    footer {
+      background-color: var(--navy);
+      color: var(--text-secondary);
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+    }
+
+    /* ========================
+       Responsive
+    ======================== */
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Tom Rudny</h1>
+    <p>AI & ML Engineer – Sharing insights from 20+ years in tech</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- About Section -->
+  <section>
+    <h2>About Me</h2>
+    <p>I am an experienced AI and ML engineer with over 20 years of hands-on experience. I started working on AI before it was called that way and popular. My footsteps can be traced through software development, business intelligence, analytics, data science, machine learning, natural language processing, and LLMs.</p>
+    <p>I have seen a lot that was good and… a lot that wasn’t. I will be sharing my experiences, pointing out what to do and what to avoid. I will also comment on the latest developments and news in AI and ML.</p>
+  </section>
+
+  <!-- Experience & Skills Section -->
+  <section>
+    <h2>Experience & Expertise</h2>
+    <div class="card">
+      <h3>Software Development</h3>
+      <ul>
+        <li>Core programming principles & large-scale software design</li>
+        <li>Business intelligence & analytics pipelines</li>
+        <li>Data engineering and clean architecture</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Machine Learning & AI</h3>
+      <ul>
+        <li>Supervised, unsupervised, and reinforcement learning</li>
+        <li>Natural language processing & large language models</li>
+        <li>End-to-end ML system design & deployment</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Research & Insights</h3>
+      <ul>
+        <li>AI research, robotics, and automation</li>
+        <li>Critical analysis of new trends and technologies</li>
+        <li>Sharing lessons learned from successes and failures</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section>
+    <h2>My Philosophy</h2>
+    <p>I believe that real learning comes from seeing what works and what doesn’t. My goal is to give you clear guidance, practical advice, and thoughtful commentary on AI, ML, and technology in general.</p>
+    <p>While we probably won’t have a coffee together, I will write what I would have told over one. Expect insights, recommendations, and lessons distilled from decades of experience.</p>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section>
+    <h2>Join the Journey</h2>
+    <p>If you’re interested in AI, ML, and practical tech insights, consider following my work. New posts will share experiences, guidance, and analyses that you won’t find in textbooks.</p>
+    <button class="btn">Subscribe / Follow</button>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Tom Rudny. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
