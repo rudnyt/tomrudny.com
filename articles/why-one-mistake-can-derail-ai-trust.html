@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why One Silly Mistake Can Derail Your AI Project | Tom's Blog</title>
+  <meta name="description" content="A 99% accurate AI model can still fail completely - because users don't experience datasets, they experience individual moments. Here's why edge cases destroy trust and what you can do about it." />
+  <meta name="keywords" content="AI edge cases, machine learning trust, LLM failures, AI product trust, model accuracy, AI user perception, spam classifier, cherry picking AI, AI failure modes" />
+  <meta name="author" content="Tom" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Why One Silly Mistake Can Derail Your AI Project" />
+  <meta property="og:description" content="Your model scores 99% accuracy. One memorable failure later and users have lost all trust. Here's why edge cases matter more than metrics - and how to fix it." />
+  <meta property="og:url" content="https://yourdomain.com/articles/why-one-mistake-can-derail-ai-trust" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Why One Silly Mistake Can Derail Your AI Project" />
+  <meta name="twitter:description" content="Your model scores 99% accuracy. One memorable failure later and users have lost all trust. Here's why edge cases matter more than metrics." />
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/png" href="../img/krlogo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "uneavc3y4i");
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BST1TNHSHC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BST1TNHSHC');
+  </script>
+
+  <!-- Schema.org markup for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Why One Silly Mistake Can Derail Your AI Project",
+    "description": "A 99% accurate AI model can still fail completely - because users don't experience datasets, they experience individual moments. Here's why edge cases destroy trust and what you can do about it.",
+    "author": {
+      "@type": "Person",
+      "name": "Tom"
+    },
+    "datePublished": "2026-02-20",
+    "dateModified": "2026-02-20",
+    "keywords": "AI edge cases, machine learning trust, LLM failures, AI product trust, model accuracy, AI user perception"
+  }
+  </script>
+</head>
+
+<body data-active-page="articles">
+
+  <!-- Navigation Placeholder -->
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <!-- Article Content -->
+    <section class="section">
+      <div class="container article-layout">
+
+        <!-- Main Content Column -->
+        <article class="article-main">
+          <p class="case-tag">FEB 20, 2026</p>
+          <h1>Why One Silly Mistake Can Derail Your AI Project</h1>
+
+          <div class="article-summary">
+            <p><strong class="text-highlight">Summary:</strong> Data scientists measure success in aggregate - accuracy, F1, AUC-ROC. Users measure it in individual moments. A single memorable failure can undo years of technical progress and destroy trust in an otherwise excellent system. Understanding why this happens - and what to do about it - is one of the most underrated skills in AI product development.</p>
+          </div>
+
+          <img src="../img/insights/one-mistake-hero.jpg" alt="AI edge case derailing trust" class="article-hero-img">
+          <p class="img-caption">Image generated with Nano Banana Pro.</p>
+
+          <p>Data scientists and ML engineers evaluate models with aggregate metrics: accuracy, precision, recall, F1-score, AUC-ROC, perplexity (for language models), and more. If the model excels across a large test set, we call it a success. Mistakes are inevitable in any real-world system, but if they're rare enough, we do not worry. After all, even the best make occasional mistakes.</p>
+
+          <p>Users and stakeholders, however, don't see datasets or curves. They experience individual examples.</p>
+
+          <p>A spam classifier might correctly flag 98% of junk posts, but if it mistakenly labels a legitimate announcement from a trusted news outlet as spam, trust evaporates. One bad call is all it takes.</p>
+
+          <h2 id="llm-scrutiny">The LLM Spotlight Problem</h2>
+
+          <p>Large language models have faced this scrutiny intensely. A classic case: early versions struggled to count the letter R's in "strawberry" - there are three. The error is spectacular in its apparent simplicity. Explaining that LLMs process text via subword tokens (where "strawberry" might split into chunks like "straw" and "berry," obscuring individual letters) rarely helps. Critics laughed: "AI isn't taking over anytime soon."</p>
+
+          <p>Never mind the model's genuine achievements across translation, coding, summarisation, and reasoning. One viral failure overshadowed the rest.</p>
+
+          <p>This is classic cherry-picking, driven by cognitive biases like the availability heuristic - memorable errors stick far longer than boring successes. But as the person responsible for an AI product, you can't dismiss it. You have to build and maintain trust.</p>
+
+          <h2 id="beyond-llms">Real-World Examples Beyond LLMs</h2>
+
+          <p>The issue isn't limited to text classifiers or chatbots. In computer vision, a self-driving system's near-perfect detection rate means little if it once confuses a white truck with a bright sky, nearly causing an accident. In recommendation engines, one wildly off-base suggestion - like surfacing baby products to someone who recently suffered a miscarriage - can make the entire system feel creepy or incompetent, regardless of how well it performs the rest of the time.</p>
+
+          <p>The pattern is consistent: the failures that kill trust are not the most frequent ones. They're the most <em>emotionally resonant</em> ones.</p>
+
+          <h2 id="what-to-do">What Can You Do About Edge Cases?</h2>
+
+          <p>Fortunately, many failure modes are addressable. Here are three approaches that actually work:</p>
+
+          <h3 id="data-augmentation">1. Data augmentation and retraining</h3>
+
+          <p>Add misclassified or tricky examples to your training set. This is a core idea behind boosting algorithms like AdaBoost, which iteratively focus on hard cases. In one project, I added features like uppercase-to-lowercase ratios to fix a spam classifier's issues with aggressive, all-caps posts on X (formerly Twitter). It dramatically reduced false positives on legitimate content without degrading overall performance.</p>
+
+          <p>The lesson: don't just look at where your model fails in aggregate. Look at <em>why</em> it fails on specific examples, and use that understanding to guide your data strategy.</p>
+
+          <h3 id="reasoning-improvements">2. Targeted fine-tuning and reasoning improvements</h3>
+
+          <p>For LLMs, newer reasoning-focused models - such as OpenAI's o1 series (internally codenamed "Strawberry," fittingly enough) - significantly reduced failures on tasks like letter counting by incorporating explicit multi-step reasoning during training. The model learns to think step-by-step internally, spelling out characters and counting deliberately, rather than relying on pattern matching over tokenised input. This overcomes tokenisation limitations without changing the underlying tokeniser itself.</p>
+
+          <p>The broader principle: when a failure mode is systematic, the fix is often architectural or training-level, not a patch.</p>
+
+          <h3 id="safeguards">3. Manual safeguards and hybrid systems</h3>
+
+          <p>For critical edge cases, implement rule-based overrides, post-processing checks, or hybrid systems that combine AI outputs with human review. These aren't elegant, but they protect trust while you iterate toward a more robust solution. In regulated industries or high-stakes domains, this layer of oversight isn't optional - it's the product.</p>
+
+          <h2 id="mindset">A Mindset Shift for Engineers and Managers</h2>
+
+          <p>The key takeaway is this: user perception often trumps raw accuracy. Hard metrics absolutely matter - a model must perform well objectively or it's useless. But even a 99% accurate system can fail if people don't trust it enough to use it.</p>
+
+          <p>Don't brush off "silly" complaints. Those single examples carry outsized weight because they shape first impressions and spread virally through teams, leadership, and social media. Listen, investigate, and address them proactively. Turn sceptics into advocates by showing you take their concerns seriously - not dismissively pointing at aggregate performance curves.</p>
+
+          <p>Building trustworthy AI isn't just about optimising loss functions. It's about aligning with how humans actually judge reliability. Ignore the human side, and your technically excellent system risks looking bad forever.</p>
+
+          <wbr>
+
+          <p><em>If this kind of thinking resonates with you, <a href="https://tomrudny.substack.com/subscribe" class="text-link">subscribe to the newsletter</a> to get more experience-based insights on AI and machine learning, straight to your inbox.</em></p>
+
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+
+          <!-- Table of Contents -->
+          <div class="sidebar-section">
+            <h3>In this Article</h3>
+            <ul class="toc-list">
+              <li><a href="#llm-scrutiny">The LLM Spotlight Problem</a></li>
+              <li><a href="#beyond-llms">Real-World Examples Beyond LLMs</a></li>
+              <li><a href="#what-to-do">What Can You Do About Edge Cases?</a></li>
+              <li><a href="#data-augmentation">1. Data augmentation</a></li>
+              <li><a href="#reasoning-improvements">2. Targeted fine-tuning</a></li>
+              <li><a href="#safeguards">3. Manual safeguards</a></li>
+              <li><a href="#mindset">A Mindset Shift</a></li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Load shared components script -->
+  <script src="../shared-components.js"></script>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>

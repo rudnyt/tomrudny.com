@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos - Klaudia Rudna</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="img/krlogo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "uneavc3y4i");
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BST1TNHSHC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BST1TNHSHC');
+  </script>
+</head>
+
+<body data-active-page="videos">
+  
+  <!-- Navigation Placeholder -->
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero bg-light-gradient">
+      <div class="container">
+        <p class="case-tag">INSIGHTS</p>
+        <h1 class="hero-title">Videos</h1>
+        <p class="hero-sub">Subscribe to the free Human-led AI Design newsletter and get practical insight on how AI fits into the design process, straight to your inbox.</p>
+        <a href="https://klaudiarudna.substack.com/subscribe" class="cta-primary" target="_blank" rel="noopener noreferrer">Subscribe to Newsletter</a>
+      </div>
+    </section>
+
+    <!-- Videos Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="content-grid" id="videos-grid">
+          <!-- Videos will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Load shared components script -->
+  <script src="shared-components.js"></script>
+
+  <script>
+    // Video metadata - add new videos here
+    const videos = [
+      {
+        url: 'videos/service-blueprint-tutorial.html',
+        thumbnail: 'img/video-thumb-1.jpg',
+        date: '2026-12-28',
+        dateDisplay: 'DEC 28, 2026',
+        duration: '12:45',
+        topic: 'Service Design',
+        title: 'How to Create a Service Blueprint That Actually Gets Used',
+        excerpt: 'A step-by-step walkthrough of creating service blueprints that teams actually reference and update, not just create once and forget.'
+      },
+      {
+        url: 'videos/user-testing-budget.html',
+        thumbnail: 'img/video-thumb-2.jpg',
+        date: '2026-12-15',
+        dateDisplay: 'DEC 15, 2026',
+        duration: '18:30',
+        topic: 'User Research',
+        title: 'Running Effective User Testing Sessions on a Budget',
+        excerpt: 'Learn how to get meaningful insights from user testing without expensive tools or huge research budgets.'
+      },
+      {
+        url: 'videos/design-system-figma.html',
+        thumbnail: 'img/video-thumb-3.jpg',
+        date: '2026-11-28',
+        dateDisplay: 'NOV 28, 2026',
+        duration: '15:20',
+        topic: 'Design Systems',
+        title: 'Setting Up Your First Design System in Figma',
+        excerpt: 'A practical guide to building scalable design systems that speed up your workflow and maintain consistency.'
+      },
+      {
+        url: 'videos/workshop-facilitation.html',
+        thumbnail: 'img/video-thumb-4.jpg',
+        date: '2026-11-10',
+        dateDisplay: 'NOV 10, 2026',
+        duration: '22:10',
+        topic: 'Collaboration',
+        title: 'Facilitating Stakeholder Workshops That Drive Decisions',
+        excerpt: 'Techniques for running productive workshops that align teams and lead to clear, actionable outcomes.'
+      }
+    ];
+
+    // Sort videos by date (most recent first)
+    videos.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Generate video cards
+    function loadVideos() {
+      const grid = document.getElementById('videos-grid');
+      
+      videos.forEach(video => {
+        const card = document.createElement('article');
+        card.className = 'content-card';
+        card.innerHTML = `
+          <a href="${video.url}">
+            <div class="video-thumbnail">
+              <img src="${video.thumbnail}" alt="${video.title}">
+              <div class="play-button">▶</div>
+            </div>
+            <div class="content-card-body">
+              <p class="case-tag">${video.topic} • ${video.duration} • ${video.dateDisplay}</p>
+              <h2>${video.title}</h2>
+              <p>${video.excerpt}</p>
+              <span class="text-link">Watch video →</span>
+            </div>
+          </a>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Load videos when DOM is ready
+    document.addEventListener('DOMContentLoaded', loadVideos);
+
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
