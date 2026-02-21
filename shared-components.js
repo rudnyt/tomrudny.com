@@ -1,6 +1,3 @@
-// shared-components.js
-// Place this file in your root directory or a /js folder
-
 // Dynamic path helper - detects if we're in a subfolder
 function getBasePath() {
   const path = window.location.pathname;
@@ -68,7 +65,6 @@ function getFooterHTML(basePath) {
           <p class="small">&copy; 2026 Tom Rudny. All rights reserved.</p>
           <div class="footer-links">
             <a href="${basePath}privacy-policy.html" class="footer-link">Privacy Policy</a>
-            <a href="${basePath}terms-conditions.html" class="footer-link">Terms & Conditions</a>
           </div>
         </div>
       </div>

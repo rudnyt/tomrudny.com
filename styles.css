@@ -112,7 +112,17 @@ h4 {
   color: var(--color-bg-primary);
 }
 
+#aboutpage .hero{
+  padding: 0;
+  background: #293474;
+  color: var(--color-bg-primary);
+}
+
 #homepage .hero .case-tag {
+  color: var(--color-bg-primary);
+}
+
+#aboutpage .hero .case-tag {
   color: var(--color-bg-primary);
 }
 
@@ -120,7 +130,15 @@ h4 {
   padding: 48px 0 56px;
 }
 
+#aboutpage .hero section {
+  padding: 48px 0 56px;
+}
+
 #homepage nav ul li{
+  color: var(--color-bg-primary);
+}
+
+#aboutpage nav ul li{
   color: var(--color-bg-primary);
 }
 
@@ -236,6 +254,15 @@ nav a.active-page::after {
   height: 3px;
   background-color: var(--color-brand-primary);
   margin: 3px;
+  transition: background-color 0.2s ease;
+}
+
+#homepage .burger-menu div {
+  background-color: var(--color-bg-primary);
+}
+
+#aboutpage .burger-menu div {
+  background-color: var(--color-bg-primary);
 }
 
 nav {
@@ -326,7 +353,7 @@ nav {
 
 .hero {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   isolation: isolate;
   background: linear-gradient(-40deg, #984dff -10%, #4D6BFF 15%, #C5CEFF 45%, #FFFFFF 70%, #4D6BFF 100%);
   padding: 48px 0;
@@ -1158,10 +1185,23 @@ footer {
     position: absolute;
     top: 75px;
     right: 20px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 16px;
+    background-color: #0A0E28;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    padding: 16px 24px;
     gap: 16px;
+    border-radius: 8px;
+  }
+
+  nav ul li {
+    color: var(--color-bg-primary);
+  }
+
+  nav ul li a {
+    color: var(--color-bg-primary);
+  }
+
+  nav ul li a:hover {
+    color: var(--color-brand-light);
   }
 
   .burger-menu {
@@ -1199,10 +1239,23 @@ footer {
     position: absolute;
     top: 75px;
     right: 20px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 16px;
+    background-color: #0A0E28;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    padding: 16px 24px;
     gap: 16px;
+    border-radius: 8px;
+  }
+
+  nav ul li {
+    color: var(--color-bg-primary);
+  }
+
+  nav ul li a {
+    color: var(--color-bg-primary);
+  }
+
+  nav ul li a:hover {
+    color: var(--color-brand-light);
   }
 
   .burger-menu {
